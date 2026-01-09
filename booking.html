@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Book an Appointment</h2>
+
+    <!-- Date Selection -->
+    <label>Select Date</label>
+    <input type="date" id="appointmentDate">
+
+    <!-- Time Slots -->
+    <h3>Select Time Slot</h3>
+    <div id="slots" class="slot-container"></div>
+
+    <!-- User Details -->
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="text" id="contact" placeholder="Email or Phone">
+
+    <!-- Action -->
+    <button class="primary-btn" onclick="bookAppointment()">
+    Book Appointment
+</button>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

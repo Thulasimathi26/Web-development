@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.container h1 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.tagline {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.btn-group button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #4facfe;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-group button:hover {
+    background-color: #007adf;
+}
+
+/* Booking Page Styles */
+label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.slot-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.slot-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4facfe;
+    color: white;
+}
+
+.slot-container button.selected {
+    background-color: #28a745;
+}
+
+.slot-container button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Confirmation Page */
+.confirmation-box {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #4facfe;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.confirmation-box p {
+    margin: 8px 0;
+    color: #333;
+}
+
+/* Appointments Page */
+.appointment-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.appointment-card.upcoming {
+    border-left: 5px solid #28a745;
+}
+
+.appointment-card.past {
+    border-left: 5px solid #dc3545;
+    opacity: 0.8;
+}
+
+.appointment-card p {
+    margin: 6px 0;
+}
+
+.appointment-card button {
+    margin-top: 10px;
+    background-color: #dc3545;
+}
+
+/* Primary Action Button */
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: linear-gradient(to right, #007adf, #00c6ff);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.primary-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Cancel Button (Danger Action) */
+.cancel-btn {
+    padding: 8px 14px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #b02a37;
+}
+
+/* Back / Secondary Button */
+.secondary-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #6c757d;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-btn:hover {
+    background-color: #565e64;
+}
